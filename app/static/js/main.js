@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const navLinks = document.querySelectorAll('.nav-links a');
     
     navLinks.forEach(link => {
-        if (link.getAttribute('href') === currentPath) {
+        if (link.pathname === currentPath) {
             link.style.color = '#3498db';
         }
     });

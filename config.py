@@ -13,7 +13,7 @@ class Config:
     TESTING = False
     
     # Flask settings
-    HOST = '0.0.0.0'
+    HOST = '127.0.0.1'
     PORT = 5000
 
 
@@ -25,6 +25,7 @@ class DevelopmentConfig(Config):
 class ProductionConfig(Config):
     """Production configuration."""
     DEBUG = False
+    HOST = '0.0.0.0'  # Bind to all interfaces in production
 
 
 class TestingConfig(Config):
