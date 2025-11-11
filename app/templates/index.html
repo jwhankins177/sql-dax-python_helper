@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+
+{% block title %}Home - SQL-DAX-Python Helper{% endblock %}
+
+{% block content %}
+<div class="hero">
+    <h1>Welcome to SQL-DAX-Python Helper</h1>
+    <p class="subtitle">Your comprehensive resource for learning SQL, Python, and DAX</p>
+</div>
+
+<section class="features">
+    <div class="feature-card">
+        <h2>SQL</h2>
+        <p>Master database querying with SQL tutorials and examples</p>
+        <a href="{{ url_for('main.sql_resources') }}" class="btn">Explore SQL</a>
+    </div>
+    
+    <div class="feature-card">
+        <h2>Python</h2>
+        <p>Learn Python programming from basics to advanced concepts</p>
+        <a href="{{ url_for('main.python_resources') }}" class="btn">Explore Python</a>
+    </div>
+    
+    <div class="feature-card">
+        <h2>DAX</h2>
+        <p>Understand Data Analysis Expressions for Power BI</p>
+        <a href="{{ url_for('main.dax_resources') }}" class="btn">Explore DAX</a>
+    </div>
+</section>
+{% endblock %}
